@@ -20,6 +20,11 @@ modules: [
 		module: "MMM-Koran-German",
 		position: "lower_third",	// This can be any of the regions.
 						// Best results in one of the middle regions like: lower_third
+						
+		}
+	}
+]
+````
 
 #### Multi-line:
 Use `\n` to split text into multiple lines, e.g. `First line.\nSecond line.` will be shown as:
