@@ -17,7 +17,7 @@ This module displays random Verses of Koran.
 cd ~/MagicMirror/modules/default
 git clone https://github.com/jakobsarwary1/MMM-KoranGerman
 ```
-then go to ```default.js 
+then go to ```bash default.js 
 ```
 
 To use this module, add it to the modules array in the `config/config.js` file:
