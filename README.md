@@ -14,9 +14,7 @@ This module displays random Verses of Koran.
 ## Using the module
 
 ```bash
-cd MagicMirror
-cd modules
-cd defaults
+cd ~/MagicMirror/modules/cd default
 git clone https://github.com/jakobsarwary1/MMM-KoranGerman
 ```
 
