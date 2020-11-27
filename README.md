@@ -6,10 +6,10 @@ The `MMM-Koran-German` module is like the default module `Compliments` of MagicM
 This module displays a random Verses of Koran.
 
 ## Screenshots
-![Compliments Screenshot](MMM-Koran-German-1.png)
-![Compliments Screenshot](MMM-Koran-German-2.png)
-![Compliments Screenshot](MMM-Koran-German-3.png)
-![Compliments Screenshot](MMM-Koran-German-4.png)
+![Compliments Screenshot](MMM-KoranGerman-1.png)
+![Compliments Screenshot](MMM-KoranGerman-2.png)
+![Compliments Screenshot](MMM-KoranGerman-3.png)
+![Compliments Screenshot](MMM-KoranGerman-4.png)
 
 ## Using the module
 
