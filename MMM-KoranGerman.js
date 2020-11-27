@@ -6,7 +6,7 @@
  * By Michael Teeuw http://michaelteeuw.nl
  * MIT Licensed.
  */
-Module.register("KoranGerman", {
+Module.register("MMM-KoranGerman", {
 
 	// Module config defaults.
 	defaults: {
