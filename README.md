@@ -24,10 +24,11 @@ Add ```"MMM-KoranGerman",``` to the list.
 Here you can follow the default installation instructions for the [Magic Mirror²](https://github.com/MichMich/MagicMirror) project.
 
 Now add:
-```js	{
+```js	{	
+		
 		module: "MMM-KoranGerman",
 		position: "lower_third",
-		
+		}	
 	},
 ```
 to the modules array in the `MagicMirror/config/config.js` file and save it.
