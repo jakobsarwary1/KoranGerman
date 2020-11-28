@@ -21,7 +21,9 @@ git clone https://github.com/jakobsarwary1/MMM-KoranGerman
 Now go to MagicMirror/modules/default and open ```defaultmodules.js``` 
 Add ```"MMM-KoranGerman",``` to the list.
 
-To use this module, add it to the modules array in the `config/config.js` file:
+Here you can follow the default installation instructions for the [Magic Mirror²](https://github.com/MichMich/MagicMirror) project.
+
+Then go to MagicMirror/config and open ```"config.js``` use this module, add it to the modules array in the `config/config.js` file:
 ````javascript
 modules: [
 	{
