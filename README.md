@@ -24,15 +24,14 @@ Add ```"MMM-KoranGerman",``` to the list.
 Here you can follow the default installation instructions for the [Magic Mirror²](https://github.com/MichMich/MagicMirror) project.
 
 Now add:
-```{
-		module: "MMM-Koran-German",
-		position: "lower_third",	// This can be any of the regions.
-						// Best results in one of the middle regions like: lower_third
-						
-		}
-	},
+```		{
+			module: "MMM-KoranGerman",
+			position: "lower_third",
+			
+		},
 ```
-to the modules array in the `config/config.js` file and save it.
+to the modules array in the `MagicMirror/config/config.js` file and save it.
+Reboot your Mirror and you should have it (Inscha'Allah)
 
 #### Multi-line:
 Use `\n` to split text into multiple lines, e.g. `First line.\nSecond line.` will be shown as:
