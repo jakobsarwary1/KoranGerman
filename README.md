@@ -5,8 +5,9 @@ This module displays random Verses of Koran.
 
 ## Screenshots
 ![Compliments Screenshot](MMM-KoranGerman-1.png)
-![Compliments Screenshot](MMM-KoranGerman-2.png) ![Compliments Screenshot](MMM-KoranGerman-3.png)
-
+![Compliments Screenshot](MMM-KoranGerman-2.png)
+![Compliments Screenshot](MMM-KoranGerman-3.png)
+![Compliments Screenshot](MMM-KoranGerman-4.png)
 
 
 ## Using the module
