@@ -1,6 +1,5 @@
 # Module: MMM-KoranGerman
 # MMM-KoranGerman
-
 The `MMM-KoranGerman` module is like the default module `compliments` of MagicMirror2 with the difference that the `MMM-KoranGerman` module does not show Compliments but German translation of verses from the Koran.
 
 This module displays random Verses of Koran.
@@ -11,7 +10,7 @@ This module displays random Verses of Koran.
 
 ## Using the module
 
-```bash
+```
 cd ~/MagicMirror/modules/default
 git clone https://github.com/jakobsarwary1/MMM-KoranGerman
 ```
@@ -21,7 +20,7 @@ Add ```"MMM-KoranGerman",``` to the list.
 Now add:
 
 ```
-js{
+{
     module: "MMM-KoranGerman",
 		position: "lower_third",
 },
