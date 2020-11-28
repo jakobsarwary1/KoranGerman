@@ -1,4 +1,3 @@
-# Module: MMM-KoranGerman
 # MMM-KoranGerman
 The `MMM-KoranGerman` module is like the default module `compliments` of MagicMirror2 with the difference that the `MMM-KoranGerman` module does not show Compliments but German translation of verses from the Koran.
 
