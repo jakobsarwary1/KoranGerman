@@ -28,11 +28,10 @@ Reboot your Mirror and you should have it (Inscha'Allah).
 
 #### Multi-line:
 Use `\n` to split text into multiple lines, e.g. `First line.\nSecond line.` will be shown as:
-```
+
+```js
 First line.
 Second line.
 ```
 
 Here you can follow the default installation instructions for the [Magic Mirror²](https://github.com/MichMich/MagicMirror) project.
-
-
