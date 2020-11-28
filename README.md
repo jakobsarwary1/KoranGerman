@@ -18,8 +18,8 @@ cd ~/MagicMirror/modules/default
 git clone https://github.com/jakobsarwary1/MMM-KoranGerman
 ```
 
-Now go to MagicMirror/modules/default and open the  ```bash  defaultmodules.js  ``` file 
-Add ```bash "MMM-KoranGerman",  ``` to the list.
+Now go to MagicMirror/modules/default and open the  ```defaultmodules.js``` file 
+Add ```"MMM-KoranGerman",``` to the list.
 
 To use this module, add it to the modules array in the `config/config.js` file:
 ````javascript
