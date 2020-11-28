@@ -18,23 +18,21 @@ cd ~/MagicMirror/modules/default
 git clone https://github.com/jakobsarwary1/MMM-KoranGerman
 ```
 
-Now go to MagicMirror/modules/default and open ```defaultmodules.js``` 
+Go to MagicMirror/modules/default and open ```defaultmodules.js``` 
 Add ```"MMM-KoranGerman",``` to the list.
 
 Here you can follow the default installation instructions for the [Magic Mirror²](https://github.com/MichMich/MagicMirror) project.
 
-Then go to MagicMirror/config and open ```"config.js``` use this module, add it to the modules array in the `config/config.js` file:
-````javascript
-modules: [
-	{
+Now add:
+```{
 		module: "MMM-Koran-German",
 		position: "lower_third",	// This can be any of the regions.
 						// Best results in one of the middle regions like: lower_third
 						
 		}
-	}
-]
-````
+	},
+```
+to the modules array in the `config/config.js` file and save it.
 
 #### Multi-line:
 Use `\n` to split text into multiple lines, e.g. `First line.\nSecond line.` will be shown as:
