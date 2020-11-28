@@ -30,15 +30,8 @@ Now add:
 		position: "lower_third",
 },
 ```
-```js	{	
-		
-		module: "MMM-KoranGerman",
-		position: "lower_third",
-		}	
-	},
-```
 to the modules array in the `MagicMirror/config/config.js` file and save it.
-Reboot your Mirror and you should have it (Inscha'Allah)
+Reboot your Mirror and you should have it (Inscha'Allah).
 
 #### Multi-line:
 Use `\n` to split text into multiple lines, e.g. `First line.\nSecond line.` will be shown as:
