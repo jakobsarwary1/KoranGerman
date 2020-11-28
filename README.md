@@ -20,7 +20,8 @@ Go to MagicMirror/modules/default and open ```defaultmodules.js```
 Add ```"MMM-KoranGerman",``` to the list.
 
 Now add:
-```{
+```
+{
     module: "MMM-KoranGerman",
 		position: "lower_third",
 },
