@@ -728,7 +728,14 @@ Module.register("MMM-KoranGerman", {
 		updateInterval: 120000,
 		remoteFile: null,
 		fadeSpeed: 3000,
+		morningStartTime: 3,
+		morningEndTime: 12,
+		afternoonStartTime: 12,
+		afternoonEndTime: 17
 	},
+
+	// Set currentweather from module
+	currentWeatherType: "",
 
 	// Define required scripts.
 	getScripts: function() {
@@ -755,8 +762,8 @@ Module.register("MMM-KoranGerman", {
 		}, this.config.updateInterval);
 	},
 
-	/*randomIndex: function(KoranGerman)
-	 * Generate a random index for a list of verses of KoranGerman.
+	/* randomIndex(KoranGerman)
+	 * Generate a random index for a list of KoranGerman.
 	 *
 	 * argument KoranGerman Array<String> - Array with KoranGerman.
 	 *
@@ -782,7 +789,35 @@ Module.register("MMM-KoranGerman", {
 		return koranIndex;
 	},
 
-	
+	/* koranArray()
+	 * Retrieve an array of KoranGerman for the time of the day.
+	 *
+	 * return KoranGerman Array<String> - Array with KoranGerman for the time of the day.
+	 */
+	koranArray: function() {
+		var hour = moment().hour();
+		var KoranGerman;
+
+		if (hour >= this.config.morningStartTime && hour < this.config.morningEndTime && this.config.KoranGerman.hasOwnProperty("morning")) {
+			KoranGerman = this.config.KoranGerman.morning.slice(0);
+		} else if (hour >= this.config.afternoonStartTime && hour < this.config.afternoonEndTime && this.config.KoranGerman.hasOwnProperty("afternoon")) {
+			KoranGerman = this.config.KoranGerman.afternoon.slice(0);
+		} else if(this.config.KoranGerman.hasOwnProperty("evening")) {
+			KoranGerman = this.config.KoranGerman.evening.slice(0);
+		}
+
+		if (typeof KoranGerman === "undefined") {
+			KoranGerman = new Array();
+		}
+
+		if (this.currentWeatherType in this.config.KoranGerman) {
+			KoranGerman.push.apply(KoranGerman, this.config.KoranGerman[this.currentWeatherType]);
+		}
+
+		KoranGerman.push.apply(KoranGerman, this.config.KoranGerman.anytime);
+
+		return KoranGerman;
+	},
 
 	/* koranFile(callback)
 	 * Retrieve a file from the local filesystem
@@ -802,9 +837,9 @@ Module.register("MMM-KoranGerman", {
 	},
 
 	/* koranArray()
-	 * Retrieve a random vers of koran.
+	 * Retrieve a random koran.
 	 *
-	 * return koran string - A vers.
+	 * return koran string - A koran.
 	 */
 	randomCompliment: function() {
 		var KoranGerman = this.koranArray();
@@ -825,6 +860,30 @@ Module.register("MMM-KoranGerman", {
 		return wrapper;
 	},
 
+	// From data currentweather set weather type
+	setCurrentWeatherType: function(data) {
+		var weatherIconTable = {
+			"01d": "day_sunny",
+			"02d": "day_cloudy",
+			"03d": "cloudy",
+			"04d": "cloudy_windy",
+			"09d": "showers",
+			"10d": "rain",
+			"11d": "thunderstorm",
+			"13d": "snow",
+			"50d": "fog",
+			"01n": "night_clear",
+			"02n": "night_cloudy",
+			"03n": "night_cloudy",
+			"04n": "night_cloudy",
+			"09n": "night_showers",
+			"10n": "night_rain",
+			"11n": "night_thunderstorm",
+			"13n": "night_snow",
+			"50n": "night_alt_cloudy_windy"
+		};
+		this.currentWeatherType = weatherIconTable[data.weather[0].icon];
+	},
 
 	// Override notification handler.
 	notificationReceived: function(notification, payload, sender) {
